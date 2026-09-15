@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringkasan Materi Pemrograman Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="brand">Catatan Belajar</span>
+        <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+            &#9776;
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="about.html">About Me</a>
+            <a href="git.html">Materi Git &amp; GitHub</a>
+            <a href="html.html">Materi HTML</a>
+        </div>
+    </nav>
+
+    <h1>Mengenal Git dan GitHub</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAez_cKTFZVD9lGQQmCEce_VYmRpgH2QguLXGfgI-Rtw&s=10"
+        alt="Logo Git" width="100" height="100">
+
+    <h2>Apa itu Git?</h2>
+    <p>Git adalah sistem version control — alat untuk mencatat setiap perubahan pada kode secara bertahap, sehingga
+        riwayat
+        perubahan itu bisa dilihat, dibandingkan, atau dikembalikan kapan saja. Git berjalan di komputer sendiri, tanpa
+        harus
+        terhubung ke internet.</p>
+    <p>Dengan Git, beberapa orang bisa mengerjakan file yang sama tanpa saling menimpa pekerjaan satu sama lain. Setiap
+        perubahan tersimpan sebagai satu titik dalam riwayat proyek, lengkap dengan siapa yang mengubah dan kapan.</p>
+    <h2>Konsep dasar</h2>
+    <p>Empat istilah ini muncul di hampir semua penjelasan Git. Memahami keempatnya sudah cukup untuk mulai bekerja.</p>
+    <ul>
+        <li><strong>Repository</strong>: tempat menyimpan semua file proyek dan riwayat perubahan</li>
+        <li><strong>Commit</strong>: catatan tentang perubahan yang dibuat pada file proyek</li>
+        <li><strong>Branch</strong>: cabang dari proyek utama untuk mengerjakan fitur baru atau perbaikan bug</li>
+        <li><strong>Merge</strong>: menggabungkan perubahan dari satu branch ke branch lain</li>
+    </ul>
+
+    <h2>Perintah Dasar Git</h2>
+    <p>Beberapa perintah/command dasar Git:</p>
+    <ul>
+        <li><strong>git init</strong>: Inisialisasi repository Git baru</li>
+        <li><strong>git add</strong>: Menambahkan file ke staging area</li>
+        <li><strong>git commit</strong>: Menyimpan perubahan ke repository</li>
+        <li><strong>git push</strong>: Mengirim perubahan ke remote repository</li>
+        <li><strong>git pull</strong>: Mengunduh perubahan dari remote repository</li>
+    </ul>
+
+    <h2>Apa itu GitHub?</h2>
+    <p>GitHub adalah layanan hosting untuk proyek pengembangan perangkat lunak yang menggunakan sistem kontrol versi
+        Git. Jika Git bekerja secara lokal di komputer, GitHub menyediakan tempat menyimpan repo itu secara daring agar
+        bisa diakses,
+        dibagikan, dan dikerjakan bersama tim dari mana saja.</p>
+
+    <p>Selain penyimpanan, GitHub menambahkan fitur kolaborasi seperti issue untuk mencatat tugas atau bug, pull request
+        untuk
+        meninjau perubahan sebelum digabungkan, dan halaman proyek untuk dokumentasi.</p>
+
+    <h2>Alur kerja umum</h2>
+    <p>Begini urutan kerja yang biasa dipakai saat menggunakan Git bersama GitHub dalam sebuah proyek.</p>
+    <ol>
+        <li>Clone repository >>> Menyalin repository dari GitHub ke komputer dengan git clone, agar bisa dikerjakan
+            secara lokal</li>
+        <li>Buat branch baru >>> Memisahkan pekerjaan dari kode utama dengan git branch dan git checkout, supaya
+            perubahan tidak langsung memengaruhi
+            branch utama.</li>
+        <li>Commit perubahan >>> Menyimpan progres secara bertahap dengan git add dan git commit, masing-masing disertai
+            pesan yang jelas.</li>
+        <li>Push ke GitHub >>> Mengirim commit dari komputer ke repo GitHub dengan git push, sehingga tersimpan dan bisa
+            dilihat tim. </li>
+        <li>Ajukan pull request >>>Meminta perubahan pada branch ditinjau dan digabungkan ke branch utama lewat pull
+            request di GitHub.</li>
+    </ol>
+
+    <h2>Bedanya Git dan GitHub</h2>
+    <p>Git adalah sistem version control yang digunakan untuk melacak perubahan dalam file-file proyek, sedangkan Github
+        adalah platform hosting untuk proyek Git.</p>
+
+    <h2>Kenapa perlu dipelajari</h2>
+    <div>
+        <ul class="benefits">
+            <li>Riwayat perubahan kode tercatat rapi dan bisa dikembalikan jika terjadi kesalahan.</li>
+            <li>Beberapa orang bisa mengerjakan proyek yang sama tanpa saling menimpa pekerjaan.</li>
+            <li>Fitur branch memungkinkan eksperimen tanpa mengganggu kode yang sudah stabil.</li>
+            <li>Hampir semua proyek open source dan perusahaan software menggunakan Git &amp; GitHub sebagai standar
+                kerja.</li>
+        </ul>
+    </div>
+
+
+    <footer>Pelajari lebih lanjut di <a target="_blank" href="https://www.w3schools.com/html/">W3School HTML
+            Tutorial</a></footer>
+</body>
+
+</html>
