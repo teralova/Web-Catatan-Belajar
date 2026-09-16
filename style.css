@@ -158,3 +158,24 @@ footer {
 footer a {
     color: var(--sage-dark);
 }
+
+/* ===== Tentang Kami ===== */
+.dua-kolom {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.profil {
+    flex: 1;
+}
+
+.profil h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .dua-kolom {
+        flex-direction: column;
+    }
+}
