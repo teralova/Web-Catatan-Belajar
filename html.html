@@ -1,121 +1,122 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <tittle>HTML Kaira</tittle>
-    </head>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn How the Web is Built</title>
 
-    <body>
-        <h1>Learn How the Web is Built</h1>
-        <h2> 1. What is HTML?</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Learn How the Web is Built</h1>
+    
+    <h2>1. What is HTML?</h2>
+    <p> 
+        HTML adalah singkatan dari <strong>Hypertext Markup Language</strong>. Jika diambil pengertian dari masing-masing istilah tersebut, maka Hypertext merupakan dokumen yang berisi tautan (link), yang memungkinkan pengguna terhubung ke halaman yang lain.
+        Sedangkan Markup Language merupakan sekumpulan code yang dipahami oleh komputer, yang nantinya menghasilkan suatu informasi. 
+        Dengan demikian, bila pengertian dari kedua istilah tersebut digabungkan, maka HTML adalah bahasa markup/markup languange yang digunakan untuk membuat struktur halaman website.
+    </p>
 
-        <p> 
-            HTML adalah singkatan dari <strong>Hypertext Markup Language</strong>. Jika diambil pengertian dari masing-masing istilah tersebut, maka Hypertext merupakan dokumen yang berisi tautan (link), yang memungkinkan pengguna terhubung ke halaman yang lain.
-            Sedangkan Markup Language merupakan sekumpulan code yang dipahami oleh komputer, yang nantinya menghasilkan suatu informasi. 
-            Dengan demikian, bila pengertian dari kedua istilah tersebut digabungkan, maka HTML adalah bahasa markup/markup languange yang digunakan untuk membuat struktur halaman website.
-        
-        <h2> 2. Basic HTML Structure</h2>
-
-        <p>
-    Setiap Dokumen HTML memiliki basic structure.
-    Berikut adalah contoh-contohnya:
-</p>
+    <h2>2. Basic HTML Structure</h2>
+    <p>
+        Setiap Dokumen HTML memiliki basic structure. Berikut adalah contoh-contohnya:
+    </p>
 
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;My First Website&lt;/title&gt;
+&lt;title&gt;My First Website&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;Hello World!&lt;/h1&gt;
-    &lt;p&gt;This is my first website.&lt;/p&gt;
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;This is my first website.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
-        </p>
-    <h2> 3. Tags & Elements</h2>
+
+    <h2>3. Tags & Elements</h2>
     <p>
         Elemen HTML adalah satu kesatuan utuh yang mencakup tag pembuka, konten di bagian tengah, dan tag penutup. 
-        Sementara itu, tag HTML hanyalah potongan kode yang diapit oleh tanda kurung sudut < > yang memberi tahu peramban cara menafsirkan konten tersebut.
+        Sementara itu, tag HTML hanyalah potongan kode yang diapit oleh tanda kurung sudut &lt; &gt; yang memberi tahu peramban cara menafsirkan konten tersebut.
     </p>
+    
     <h3>Contoh:</h3>
-
 <pre>
 &lt;h1&gt;Hello World!&lt;/h1&gt;
 &lt;p&gt;This is a paragraph.&lt;/p&gt;
 &lt;a href="#"&gt;Visit Website&lt;/a&gt;
 </pre>
 
-<h2>4. Links & Images</h2>
-
-<h3>Links</h3>
-
-<p>
-    link (tautan) dan image (gambar) dalam HTML adalah elemen dasar untuk membuat halaman web menjadi interaktif dan kaya visual
+    <h2>4. Links & Images</h2>
+    <h3>Links</h3>
+    <p>
+        link (tautan) dan image (gambar) dalam HTML adalah elemen dasar untuk membuat halaman web menjadi interaktif dan kaya visual
+    </p>
     <p>1. Link (Tautan / Hyperlink)</p>
     <p>Pengertian: Elemen HTML yang berfungsi untuk menghubungkan satu halaman web ke halaman web lainnya, baik di dalam situs yang sama maupun ke situs luar (eksternal).</p>
-    <p>Tag utama: Menggunakan tag <a> (anchor).Atribut penting: href (Hypertext Reference) untuk menentukan URL atau alamat tujuan yang akan dikunjungi saat link diklik.</p>
-    
+    <p>Tag utama: Menggunakan tag &lt;a&gt; (anchor). Atribut penting: href (Hypertext Reference) untuk menentukan URL atau alamat tujuan yang akan dikunjungi saat link diklik.</p>
+        
     <p>2. Image (Gambar)</p>
     <p>Pengertian: Elemen HTML yang digunakan untuk menyisipkan atau menampilkan file gambar (seperti JPG, PNG, atau GIF) ke dalam halaman web. </p>
-    <p>Tag utama: Menggunakan tag <img>. Tag ini tidak memerlukan tag penutup.</p>
+    <p>Tag utama: Menggunakan tag &lt;img&gt;. Tag ini tidak memerlukan tag penutup.</p>
     
     <p>Atribut penting:</p>
-    <li> src (Source): Menentukan lokasi atau jalur (path) file gambar.</li>
-    <li> alt (Alternative text): Teks pengganti yang muncul jika gambar gagal dimuat oleh browser.</li>
-    <li> width dan height: Mengatur ukuran lebar dan tinggi gambar.</li> 
-    
-</p>
+    <ul>
+        <li>src (Source): Menentukan lokasi atau jalur (path) file gambar.</li>
+        <li>alt (Alternative text): Teks pengganti yang muncul jika gambar gagal dimuat oleh browser.</li>
+        <li>width dan height: Mengatur ukuran lebar dan tinggi gambar.</li> 
+    </ul>
 
 <pre>
 &lt;a href="https://example.com"&gt;
-    Visit Website
+Visit Website
 &lt;/a&gt;
 </pre>
 
-<h3>Images</h3>
-
-<p>
-    The &lt;img&gt; tag is used to display images on a webpage.
-</p>
+    <h3>Images</h3>
+    <p>
+        The &lt;img&gt; tag is used to display images on a webpage.
+    </p>
 
 <pre>
 &lt;img src="image.jpg" alt="Example Image"&gt;
 </pre>
 
-<h2>5. Attributes</h2>
-
-<p>
-    informasi atau nilai tambahan yang diletakkan di dalam tag pembuka untuk mengatur perilaku, tampilan, atau fungsi dari suatu elemen
+    <h2>5. Attributes</h2>
+    <p>
+        informasi atau nilai tambahan yang diletakkan di dalam tag pembuka untuk mengatur perilaku, tampilan, atau fungsi dari suatu elemen
+    </p>
     <ul>
-        <li> Nama Atribut: Menunjukkan properti yang ingin diatur (contoh: src, href, class).</li>
-        <li> Value: Informasi spesifik dari atribut yang biasanya diapit oleh tanda petik.</li>
-        <li> Contoh Penulisan: Tautan di mana href adalah atribut dan URL-nya adalah nilai.</li>
-</p>
+        <li>Nama Atribut: Menunjukkan properti yang ingin diatur (contoh: src, href, class).</li>
+        <li>Value: Informasi spesifik dari atribut yang biasanya diapit oleh tanda petik.</li>
+        <li>Contoh Penulisan: Tautan di mana href adalah atribut dan URL-nya adalah nilai.</li>
+    </ul>
 
-<h3>Example:</h3>
-
+    <h3>Example:</h3>
 <pre>
 &lt;p class="highlight"&gt;
     Hello World!
 &lt;/p&gt;
 </pre>
 
-<p>
-    beberapa atribut HTML:
-</p>
-
-<ul>
-    <li>class</li>
-    <li>id</li>
-    <li>href</li>
-    <li>src</li>
-    <li>alt</li>
-</ul>
+    <p>
+        beberapa atribut HTML:
+    </p>
+    <ul>
+        <li>class</li>
+        <li>id</li>
+        <li>href</li>
+        <li>src</li>
+        <li>alt</li>
+    </ul>
  
-<p>Baca lebih lengkap disini:</p>
-<a href="https://www.dicoding.com/blog/panduan-lengkap-belajar-coding-html-untuk-pemula/" target="_blank">
-    Panduan Belajar HTML untuk Pemula
-</a>
-    </body>
+    <p>Baca lebih lengkap disini:</p>
+    <a href="https://www.dicoding.com/blog/panduan-lengkap-belajar-coding-html-untuk-pemula/" target="_blank">
+        Panduan Belajar HTML untuk Pemula
+    </a>
+
+</body>
 </html>
