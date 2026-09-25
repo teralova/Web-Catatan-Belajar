@@ -82,8 +82,8 @@ strong {
 
 /* ===== Konten ===== */
 main,
-body>*:not(.nav) {
-    max-width: 720px;
+body>*:not(nav) {
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 24px;
 }
